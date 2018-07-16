@@ -6,9 +6,12 @@ import { AppComponent } from "./app.component";
 import { CvIrmaComponent } from "./cv-irma/cv-irma.component";
 import { NameComponent } from "./cv-irma/name/name.component";
 import { AcademicComponent } from "./cv-irma/academic/academic.component";
-import { AcademicRowComponent } from "./cv-irma/academic/academic-row/academic-row.component";
-import { AcademicRowTitlesComponent } from "./cv-irma/academic/academic-row-titles/academic-row-titles.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { VfsComponent } from "./cv-irma/vfs/vfs.component";
+import { AcademicProjectsComponent } from './cv-irma/academic-projects/academic-projects.component';
+import { ProfessionalExpComponent } from './cv-irma/professional-exp/professional-exp.component';
+import { PositonOfResponsibilityComponent } from './cv-irma/positon-of-responsibility/positon-of-responsibility.component';
+import { AchievementsComponent } from './cv-irma/achievements/achievements.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +19,16 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     CvIrmaComponent,
     NameComponent,
     AcademicComponent,
-    AcademicRowComponent,
-    AcademicRowTitlesComponent
+
+    VfsComponent,
+
+    AcademicProjectsComponent,
+
+    ProfessionalExpComponent,
+
+    PositonOfResponsibilityComponent,
+
+    AchievementsComponent
   ],
   imports: [
     BrowserModule,

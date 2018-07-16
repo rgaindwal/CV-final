@@ -1,0 +1,14 @@
+.academic {
+  background: lightgrey;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.academic-row-titles{ 
+  border: 1px solid grey;
+}
+
+.center-content {
+  align-content: center;
+}
+

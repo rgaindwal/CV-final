@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row ">
+    <div class="col-xs-12 col-md-12 col-sm-12 ">
+      <div class="text-uppercase global-heading" [ngDraggable]="childDraggable">
+        <h5>Professional Experience</h5>
+      </div>
+
+      <div class="col-xs-12 col-md-12 col-sm-12 ">
+        <div class="row" *ngFor="let professionalExp of professionalExps">
+          <div class="container">
+            <div class="col-xs-12 col-md-12.col-sm-12">
+              <div class="row global-row" ngResizable>
+                <div class="col-xs-4 col-sm-6 col-md-4 " ngDraggable>
+                  <strong> {{ professionalExp.companyName }} </strong>
+                </div>
+                <div class="col-xs-4 col-sm-6 col-md-4 " ngDraggable>
+                  {{ professionalExp.position }}
+                </div>
+                <div class="col-xs-4 col-sm-6 col-md-4 text-right" ngDraggable>
+                  {{ professionalExp.startDate }} - {{ professionalExp.endDate }}
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-xs-12 col-md-12 col-sm-12 ">
+            <div class="row ">
+              <div class="col-xs-12 col-sm-12 col-md-12 v-center global-row" ngDraggable ngResizable>
+                <div class="row ">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    <ul *ngFor="let description of professionalExp.descriptions">
+                      <li> {{ description  }} </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

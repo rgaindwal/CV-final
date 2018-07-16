@@ -1,12 +1,46 @@
-<div class="row " [ngDraggable]="rowDraggable">
-  <div class="col-xs-12 col-md-12 col-sm-12">
-    <div class="text-uppercase academic" [ngDraggable]="childDraggable">
-      <h5>Academic Qualification</h5>
+<div class="container">
+
+  <div class="row   ">
+    <div class="col-xs-12 col-md-12 col-sm-12 ">
+      <div class="text-uppercase global-heading " [ngDraggable]="childDraggable">
+        <h5>Academic Qualification</h5>
+      </div>
     </div>
-
-    <app-academic-row-titles></app-academic-row-titles>
-
-    <app-academic-row></app-academic-row>
-
   </div>
+
+  <div class="container">
+  <div class="col-xs-12.col-md-12.col-sm-12">
+    <div class="row" >
+      <div class="col-xs-2 col-sm-2 col-md-2 global-row" ngDraggable >
+        <strong>Degree</strong>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 global-row" ngDraggable>
+        <strong>Year</strong>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 global-row" ngDraggable>
+        <strong>Institute/University</strong>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 global-row" ngDraggable>
+        <strong>Percentage/CGPA</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+    <div class="row" *ngFor="let academic of academics">
+      <div class="col-xs-2 col-sm-2 col-md-2 global-row" ngDraggable>
+        {{ academic.course }}
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 global-row" ngDraggable>
+        {{ academic.course }}
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 global-row" ngDraggable> {{ academic.institute }} </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 global-row" ngDraggable> {{ academic.cgpa }}</div>
+    </div>
+  </div>
+
+ 
+
 </div>

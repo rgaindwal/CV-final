@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row ">
+    <div class="col-xs-12 col-md-12 col-sm-12 ">
+      <div class="text-uppercase global-heading" [ngDraggable]="childDraggable">
+        <h5>Village Fieldwork Segment (VFS)</h5>
+      </div>
+
+      <div class="col-xs-12 col-md-12 col-sm-12  ">
+        <div class="row" *ngFor="let vfs of vfses">
+          <div class="container">
+            <div class="row" ngResizable>
+              <div class="col-xs-12 col-sm-12 col-md-12 global-row" ngDraggable>
+                <strong> {{ vfs.location }} </strong>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-xs-12 col-md-12 col-sm-12 ">
+
+            <div class="row ">
+              <div class="col-xs-3 col-sm-3 col-md-3 v-center global-row" ngDraggable ngResizable>
+                <div class="row ">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    <p>{{ vfs.topic }} </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-xs-9 col-sm-9 col-md-9 ">
+                <div class="row global-row" ngDraggable ngResizable>
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    {{vfs.title}}
+                  </div>
+                </div>
+
+                <div class="row global-row" ngResizable ngDraggable>
+                  <div class="col-xs-12 col-sm-12 col-md-12 resizable-widget">
+                    <ul *ngFor="let description of vfs.descriptions">
+                      <li> {{ description }} </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

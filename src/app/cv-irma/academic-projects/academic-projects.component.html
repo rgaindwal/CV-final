@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row ">
+    <div class="col-xs-12 col-md-12 col-sm-12 ">
+      <div class="text-uppercase global-heading" [ngDraggable]="childDraggable">
+        <h5>Academics Projects (Minimum 1)</h5>
+      </div>
+
+      <div class="col-xs-12 col-md-12 col-sm-12 ">
+        <div class="row" *ngFor="let academic of academics">
+          
+          <div class="col-xs-12 col-md-12 col-sm-12 ">
+
+            <div class="row ">
+              <div class="col-xs-3 col-sm-3 col-md-3 v-center global-row" ngDraggable ngResizable>
+                <div class="row ">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    <p>{{ academic.topic }} </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-xs-9 col-sm-9 col-md-9 ">
+                <div class="row global-row" ngDraggable ngResizable>
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    {{academic.title}}
+                  </div>
+                </div>
+
+                <div class="row global-row" ngResizable ngDraggable>
+                  <div class="col-xs-12 col-sm-12 col-md-12 resizable-widget">
+                    <ul *ngFor="let description of academic.descriptions">
+                      <li> {{ description }} </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

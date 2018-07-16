@@ -1,0 +1,40 @@
+<div class="container">
+
+
+  <div class="container">
+    <div class="row ">
+      <div class="text-uppercase col-xs-11 col-sm-11 col-md-11 global-heading">
+        <h5>Position Of Responsibility</h5>
+      </div>
+      <div class="text-uppercase col-xs-1 col-sm-1 col-md-1 global-heading">
+        <h5>Year</h5>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-sm-12">
+        <div class="row" *ngFor="let postionOfResponsibility of postionOfResponsibilities">
+          <div class="col-xs-2 col-sm-2 col-md-2 global-row" ngDraggable>
+            {{ postionOfResponsibility.designation }}
+          </div>
+          <div class="col-xs-9 col-sm-9 col-md-9 global-row" ngDraggable>
+            <div class="col-xs-12 col-sm-12 col-md-12 resizable-widget">
+              <ul *ngFor="let detail of postionOfResponsibility.details">
+                <li> {{ detail }} </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1 global-row" ngDraggable>
+            {{ postionOfResponsibility.year }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

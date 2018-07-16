@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AcademicRowComponent } from './academic-row.component';
+import { ProfessionalExpComponent } from './professional-exp.component';
 
-describe('AcademicRowComponent', () => {
-  let component: AcademicRowComponent;
-  let fixture: ComponentFixture<AcademicRowComponent>;
+describe('ProfessionalExpComponent', () => {
+  let component: ProfessionalExpComponent;
+  let fixture: ComponentFixture<ProfessionalExpComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AcademicRowComponent ]
+      declarations: [ ProfessionalExpComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AcademicRowComponent);
+    fixture = TestBed.createComponent(ProfessionalExpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
