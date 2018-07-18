@@ -1,11 +1,11 @@
 export class Academic {
   public course: string;
-  public year: number;
+  public year: string;
   public institute: string;
-  public cgpa: number;
+  public cgpa: string;
 
 
-  constructor(course: string, year: number, institute: string, cgpa: number){
+  constructor(course: string, year: string, institute: string, cgpa: string){
     this.course=course;
     this.cgpa = cgpa;
     this.year = year;

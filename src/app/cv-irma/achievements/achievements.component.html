@@ -21,10 +21,9 @@
               {{ achievement.type }}
             </div>
             <div class="col-xs-9 col-sm-9 col-md-9 global-row" ngDraggable>
-              <div class="col-xs-12 col-sm-12 col-md-12 resizable-widget">
-                <ul *ngFor="let description of achievement.description">
-                  <li> {{ description }} </li>
-                </ul>
+              <div class="col-xs-12 col-sm-12 col-md-12 resizable-widget" 
+              [innerHtml]= "achievement.description">
+                
               </div>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 global-row" ngDraggable>
